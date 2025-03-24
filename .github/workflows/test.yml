@@ -11,3 +11,9 @@ jobs:
     steps:
       - name: Initialise
         run: echo "Hello World!"
+
+      - name: Assume AWS Role
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-skip-session-tagging: true
+          role-to-assume: arn:aws:iam::312279720510:role/github-actions-test-workflows
