@@ -17,3 +17,4 @@ jobs:
         with:
           role-skip-session-tagging: true
           role-to-assume: arn:aws:iam::312279720510:role/github-actions-test-workflows
+          aws-region: ap-southeast-2
